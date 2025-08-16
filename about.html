@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tarteel Darabee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-poppins bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR (shared) -->
+  <header class="fixed w-full z-30">
+    <div class="backdrop-blur bg-white/40 border-b border-white/10">
+      <div class="max-w-5xl mx-auto flex items-center justify-between p-4 md:p-6">
+        <a href="index.html" class="text-[#8e44ad] font-bold text-xl md:text-2xl">Tarteel Darabee</a>
+        <nav class="hidden md:flex gap-8 items-center">
+          <a href="index.html" class="nav-link hover:text-[#732d91]">Home</a>
+          <a href="about.html" class="nav-link hover:text-[#732d91]">About</a>
+          <a href="contact.html" class="nav-link hover:text-[#732d91]">Contact</a>
+        </nav>
+        <button id="nav-toggle" aria-label="Open menu" class="md:hidden p-2 rounded bg-white/60 shadow">
+          <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#8e44ad]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+          </svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#8e44ad] hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-white/10">
+        <div class="px-4 pb-4 flex flex-col gap-3">
+          <a href="index.html" class="block py-2 nav-link">Home</a>
+          <a href="about.html" class="block py-2 nav-link">About</a>
+          <a href="contact.html" class="block py-2 nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <section class="max-w-5xl mx-auto px-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-[#432036] mb-6">About Me</h1>
+
+      <div class="grid gap-8 md:grid-cols-2 items-start">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="font-semibold text-xl mb-3 text-[#8e44ad]">Profile</h2>
+          <ul class="space-y-2 text-sm">
+            <li><span class="font-semibold">Full Name:</span> Tarteel Darabee</li>
+            <li><span class="font-semibold">Major:</span> Computer Engineering</li>
+            <li><span class="font-semibold">University:</span> [Palestine Technical University - Kadoorie]</li>
+            <li><span class="font-semibold">Email:</span> darabeetarteel.ttt2003@gmail.com</li>
+            <li><span class="font-semibold">Experience:</span> 2+ years</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="font-semibold text-xl mb-3 text-[#8e44ad]">Skills</h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">HTML5</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">CSS3</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">Tailwind</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">Flexbox</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">Responsive</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">Git & GitHub</span>
+            <span class="px-3 py-1 rounded-full bg-[#f8e9fb] text-[#732d91] text-sm">JavaScript Basics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow mt-8">
+        <h2 class="font-semibold text-xl mb-3 text-[#8e44ad]">About This Portfolio</h2>
+        <p class="text-sm text-gray-700 leading-7">
+          This portfolio is part of training tasks (Weeks 1–4). It demonstrates semantic HTML, responsive CSS (including Tailwind),
+          and a bit of JavaScript for interactivity and forms.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#8e44ad] text-white py-6 mt-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p>© 2025 Tarteel Darabee. Built with Tailwind CSS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

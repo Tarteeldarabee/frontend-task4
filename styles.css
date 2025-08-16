@@ -1,0 +1,28 @@
+/* styles.css - small overrides */
+@layer utilities {
+  .font-poppins { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+}
+
+/* Smooth scrolling if نفس الصفحة (not essential for multipage) */
+html { scroll-behavior: smooth; }
+
+/* Active link style (JS يضيف class=active) */
+.nav-link.active {
+  color: #732d91;
+  position: relative;
+}
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #732d91;
+  border-radius: 2px;
+}
+
+/* Small tweak for hero headings on mobile */
+@media (max-width: 640px) {
+  h1 { line-height: 1.05; }
+}
